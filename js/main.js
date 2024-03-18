@@ -1,4 +1,4 @@
-window.onload = function() {
+
     const typewriter = document.getElementById('typewriter');
     const textArray = ['aspiring algorithm engineer', 'software developer', 'thanks for stopping by!'];
     let textIndex = 0;
@@ -30,14 +30,4 @@ window.onload = function() {
     }
 
     setInterval(typeText, 100); // Add or remove a character every 100 milliseconds
-
-    document.getElementById('hamburger').addEventListener('click', function() {
-        var navLinks = document.getElementById('nav-links');
-        if (navLinks.classList.contains('visible')) {
-            navLinks.classList.remove('visible');
-        } else {
-            navLinks.classList.add('visible');
-        }
-    });
-}
 
