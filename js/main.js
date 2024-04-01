@@ -1,6 +1,6 @@
 
     const typewriter = document.getElementById('typewriter');
-    const textArray = ['aspiring algorithm engineer', 'software developer', 'thanks for stopping by!'];
+    const textArray = ['aspiring software engineer', 'software developer', 'thanks for stopping by!'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
