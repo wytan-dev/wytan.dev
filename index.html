@@ -9,6 +9,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-color: rgba(0,0,0,0.5);
             color: white;
             text-align: center;
         }
@@ -21,6 +22,20 @@
             50% { opacity: 0; }
             100% { opacity: 1; }
         }
+        .about-image {
+            background-image: url('images/about_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+        }
+
+        .about-me{
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        
     </style>
 
 
@@ -29,7 +44,7 @@
 <body>
     <!--#region Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top m-3 rounded-3" style="background-color: rgba(0,0,0,0.5);" data-bs-theme="dark">
-        <div class="container-fluid">
+      <div class="container-fluid">
           <a class="navbar-brand" href="#">wytan.dev</a>
           <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,20 +52,13 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class = "nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -65,7 +73,18 @@
     </div>
     <!--#endregion-->
 
-    <div class="contact">
+    <!--#region About page image image -->
+    
+    <div class="about-image container-fluid row bg-dark vh-100 align-items-center justify-content-md-center " id = "about" >
+        <div class = "col-sm-4 container-fluid about-me rounded ">
+          <p class = "my-2"><strong>About Me</strong></p>
+          <img src="images/selfie.jpg" class="img-thumbnail rounded-circle my-2" style="width: 50%;" alt="Profile Pic">
+        </div>
+        <div class = "col-sm-8">Hi! My name is Wee Yi</div>
+    </div>
+
+    <!--#endregion-->
+    <div class=" d-flex flex-column" id ="contact">
         <h2>Contact me</h2>
         <p>You can reach me at <a href="mailto:weeyi650@gmail.com">example@example.com</a></p>
     </div>
